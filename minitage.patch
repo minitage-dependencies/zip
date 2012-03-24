@@ -1,0 +1,12 @@
+diff -Nur a/unix/Makefile b/unix/Makefile
+--- a/unix/Makefile	2013-04-16 15:02:52.000000000 +0200
++++ b/unix/Makefile	2013-04-16 15:03:42.000000000 +0200
+@@ -38,7 +38,7 @@
+ MANFLAGS = 644
+ 
+ # target directories - where to install executables and man pages to
+-prefix = /usr/local
++prefix = $(PREFIX)
+ BINDIR = $(prefix)/bin
+ MANEXT=1
+ MANDIR = $(prefix)/man/man$(MANEXT)
